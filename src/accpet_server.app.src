@@ -1,0 +1,15 @@
+%% Feel free to use, reuse and abuse the code in this file.
+
+{application, accept_server, [
+	{description, "Ranch TCP for chatsystem."},
+	{vsn, "1"},
+	{modules, []},
+	{registered, [accept_server_sup]},
+	{applications, [
+		kernel,
+		stdlib,
+		ranch
+	]},
+	{mod, {accpet_server_app, []}},
+	{env, []}
+]}.
